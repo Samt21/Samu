@@ -2,4 +2,21 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="üst">8dp</dimen>
+    <dimen name="üst1">16dp</dimen>
+    <dimen name="üst2">32dp</dimen>
+    <dimen name="üst3">46dp</dimen>
+    <dimen name="üst4">320dp</dimen>
+    <dimen name="alt">8dp</dimen>
+    <dimen name="alt1">16dp</dimen>
+    <dimen name="alt2">32dp</dimen>
+    <dimen name="alt3">46dp</dimen>
+    <dimen name="sağ">8dp</dimen>
+    <dimen name="sağ1">16dp</dimen>
+    <dimen name="sağ2">32dp</dimen>
+    <dimen name="sağ3">46dp</dimen>
+    <dimen name="sol">8dp</dimen>
+    <dimen name="sol1">16dp</dimen>
+    <dimen name="sol2">32dp</dimen>
+    <dimen name="sol3">46dp</dimen>
 </resources>
