@@ -6,7 +6,8 @@
     <dimen name="üst1">16dp</dimen>
     <dimen name="üst2">32dp</dimen>
     <dimen name="üst3">46dp</dimen>
-    <dimen name="üst4">320dp</dimen>
+    <dimen name="üst4">-65dp</dimen>
+    <dimen name="üst5">-280dp</dimen>
     <dimen name="alt">8dp</dimen>
     <dimen name="alt1">16dp</dimen>
     <dimen name="alt2">32dp</dimen>
@@ -19,4 +20,6 @@
     <dimen name="sol1">16dp</dimen>
     <dimen name="sol2">32dp</dimen>
     <dimen name="sol3">46dp</dimen>
+    <dimen name="sol4">-140dp</dimen>
+    <dimen name="sol5">-130dp</dimen>
 </resources>
