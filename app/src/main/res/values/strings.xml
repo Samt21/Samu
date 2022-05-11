@@ -6,10 +6,21 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="email">E-mail</string>
-    <string name="password">Parola</string>
 
     <string name="todo">TODO</string>
     <string name="giri_yap">Giriş Yap</string>
+    <string name="parola">Parola</string>
+    <string name="e_mail">E-mail</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+
+    <string name="ad">ad</string>
+    <string name="cinsiyet">cinsiyet</string>
+    <string name="erkek">erkek</string>
+    <string name="kadın">kadın</string>
+    <string name="dtarihi">Doğum Tarihi</string>
+    <string name="tel">Tel</string>
+   <string name="kayıt_ol">Kayıt Ol</string>
+
 
 </resources>
