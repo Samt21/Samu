@@ -22,4 +22,5 @@
     <dimen name="sol3">46dp</dimen>
     <dimen name="sol4">-140dp</dimen>
     <dimen name="sol5">-130dp</dimen>
+    <dimen name="sol6">180dp</dimen>
 </resources>
