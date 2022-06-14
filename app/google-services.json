@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549542179673",
+    "project_id": "samu-fd953",
+    "storage_bucket": "samu-fd953.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549542179673:android:8f7537c72461256f4fd248",
+        "android_client_info": {
+          "package_name": "com.samu.samuchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549542179673-oduo3v401s5bfkqllgnqqnlkgqmjouh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiqdX9Ca7VoZRdFMMr-DwiVheeibAiBbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549542179673-oduo3v401s5bfkqllgnqqnlkgqmjouh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
