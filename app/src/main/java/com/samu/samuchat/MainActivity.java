@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
 private ActivityMainBinding binding;
 
-    private EditText editemail,editsifre,editisim;
-    private String txtemail,txtsifre,txtisim;
+    private EditText editemail,editsifre,editisim,editdtarihi,edittel;
+    private String txtemail,txtsifre,txtisim,txtdtarihi,txttel;
     private FirebaseUser mUser;
     private FirebaseAuth mAuth;
     private DatabaseReference mReferans;
@@ -43,6 +43,8 @@ private ActivityMainBinding binding;
         editemail=(EditText)findViewById(R.id.email);
         editsifre=(EditText)findViewById(R.id.sifre);
         editisim=(EditText)findViewById(R.id.isim);
+        editdtarihi=(EditText)findViewById(R.id.dtarihi);
+        edittel=(EditText)findViewById(R.id.tel);
 
 
         mAuth=FirebaseAuth.getInstance();
@@ -67,6 +69,8 @@ private ActivityMainBinding binding;
         txtemail=editemail.getText().toString();
         txtsifre=editsifre.getText().toString();
         txtisim=editisim.getText().toString();
+        txtdtarihi=editdtarihi.getText().toString();
+        txttel=edittel.getText().toString();
 
         if(!TextUtils.isEmpty(txtemail) &&!TextUtils.isEmpty(txtsifre))
         {
@@ -82,6 +86,8 @@ private ActivityMainBinding binding;
                         mData.put("kullanıcı email",txtemail);
                         mData.put("kullanıcı sifresi",txtsifre);
                         mData.put("kullanıcı Uid",mUser.getUid());
+                        mData.put("kullanıcı dogum tarihi",txtdtarihi);
+                        mData.put("kullanıcı tel",txttel);
 
                         mReferans.child("kullanıcılar").child(mUser.getUid())
                                 .setValue(mData)
