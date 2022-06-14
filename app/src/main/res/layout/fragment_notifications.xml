@@ -1,23 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment" >
+    android:background="@color/color3"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/üst3"
+        android:layout_marginEnd="@dimen/sağ"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/ad"
+        android:textColor="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_notifications"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:id="@+id/textView13"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="@dimen/sol"
+        android:text="@string/tel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone3"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/editTextPhone3" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="58dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="@dimen/sol"
+        android:text="@string/ad"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName9"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName9" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/üst1"
+        android:layout_marginEnd="@dimen/sağ"
+        android:ems="10"
+        android:hint="@string/dtarihi"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sağ1"
+        android:text="@string/erkek"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox6"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox6"
+        app:layout_constraintTop_toTopOf="@+id/checkBox6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sol6"
+        android:text="@string/cinsiyet"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBox5" />
+
+    <EditText
+        android:id="@+id/editTextPhone3"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/üst"
+        android:layout_marginEnd="@dimen/sağ"
+        android:ems="10"
+        android:hint="@string/tel"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/sol1"
+        android:layout_marginTop="@dimen/üst3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:srcCompat="@drawable/user" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/üst1"
+        android:layout_marginEnd="@dimen/sağ"
+        android:text="@string/kadın"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone3" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/sol"
+        android:text="@string/dtarihi"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate3"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="353dp"
+        android:layout_height="232dp"
+        android:layout_marginBottom="@dimen/alt2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="132dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/sol2"
+        android:layout_marginBottom="@dimen/alt2"
+        android:text="@string/hakkımızda"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName10"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
