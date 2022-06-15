@@ -22,7 +22,7 @@ private FragmentNotificationsBinding binding;
     binding = FragmentNotificationsBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textView13;
+        final TextView textView = binding.txtAd;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

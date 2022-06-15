@@ -8,7 +8,7 @@
     tools:context=".ui.notifications.NotificationsFragment">
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/editText_ad"
         android:layout_width="132dp"
         android:layout_height="48dp"
         android:layout_marginTop="@dimen/üst3"
@@ -22,29 +22,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/txt_tel"
         android:layout_width="74dp"
         android:layout_height="36dp"
         android:layout_marginStart="@dimen/sol"
         android:text="@string/tel"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone3"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/editTextPhone3" />
+        app:layout_constraintBottom_toBottomOf="@+id/edittext_telno"
+        app:layout_constraintStart_toEndOf="@+id/img_Profilfoto"
+        app:layout_constraintTop_toTopOf="@+id/edittext_telno" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txt_ad"
         android:layout_width="58dp"
         android:layout_height="41dp"
         android:layout_marginStart="@dimen/sol"
         android:text="@string/ad"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName9"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintBottom_toBottomOf="@+id/editText_ad"
+        app:layout_constraintStart_toEndOf="@+id/img_Profilfoto"
+        app:layout_constraintTop_toTopOf="@+id/editText_ad" />
 
     <EditText
-        android:id="@+id/editTextDate3"
+        android:id="@+id/editTextDate_dtarih"
         android:layout_width="132dp"
         android:layout_height="48dp"
         android:layout_marginTop="@dimen/üst1"
@@ -56,33 +56,33 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_ad" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/check_erkek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/sağ1"
         android:text="@string/erkek"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBox6"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox6"
-        app:layout_constraintTop_toTopOf="@+id/checkBox6"
+        app:layout_constraintBottom_toBottomOf="@+id/check_kadin"
+        app:layout_constraintEnd_toStartOf="@+id/check_kadin"
+        app:layout_constraintTop_toTopOf="@+id/check_kadin"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txt_cinsiyet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/sol6"
         android:text="@string/cinsiyet"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
+        app:layout_constraintBottom_toBottomOf="@+id/check_erkek"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/checkBox5" />
+        app:layout_constraintTop_toTopOf="@+id/check_erkek" />
 
     <EditText
-        android:id="@+id/editTextPhone3"
+        android:id="@+id/edittext_telno"
         android:layout_width="132dp"
         android:layout_height="48dp"
         android:layout_marginTop="@dimen/üst"
@@ -94,10 +94,10 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate_dtarih" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/img_Profilfoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="@dimen/sol1"
@@ -107,7 +107,7 @@
         app:srcCompat="@drawable/user" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/check_kadin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/üst1"
@@ -115,21 +115,21 @@
         android:text="@string/kadın"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone3" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_telno" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txt_Dtarih"
         android:layout_width="66dp"
         android:layout_height="40dp"
         android:layout_marginStart="@dimen/sol"
         android:text="@string/dtarihi"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextDate3"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/editTextDate3" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate_dtarih"
+        app:layout_constraintStart_toEndOf="@+id/img_Profilfoto"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate_dtarih" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/txt_aciklama"
         android:layout_width="353dp"
         android:layout_height="232dp"
         android:layout_marginBottom="@dimen/alt2"
@@ -141,7 +141,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/txt_hakkimizda"
         android:layout_width="132dp"
         android:layout_height="35dp"
         android:layout_marginStart="@dimen/sol2"
@@ -149,7 +149,7 @@
         android:text="@string/hakkımızda"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName10"
+        app:layout_constraintBottom_toTopOf="@+id/txt_aciklama"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

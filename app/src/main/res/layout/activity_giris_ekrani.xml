@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="-8dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_logo"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="@dimen/üst3"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
     <EditText
         android:id="@+id/Giriş_yap_parola"
@@ -58,7 +58,7 @@
         android:id="@+id/btn_girisyap"
         android:layout_width="208dp"
         android:layout_height="64dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="@dimen/üst1"
         android:backgroundTint="@color/color4"
         android:text="@string/giri_yap"
         android:textColor="#FFFFFF"
@@ -73,7 +73,7 @@
         android:id="@+id/btn_kayitol"
         android:layout_width="208dp"
         android:layout_height="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/üst"
         android:backgroundTint="@color/color4"
         android:text="@string/kayıt_ol"
         android:textColor="#FFFFFF"
