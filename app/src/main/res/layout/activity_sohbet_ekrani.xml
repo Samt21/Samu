@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".SohbetEkrani">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:background="@color/color3">
+
+            <ImageView
+                android:id="@+id/img_sohbetprofil"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="@dimen/sol1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_geri"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/btn_geri"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/sol2"
+                android:backgroundTint="@color/color4"
+                app:cornerRadius="100dp"
+                app:icon="@drawable/leftarrow"
+                app:iconGravity="textStart"
+                app:iconSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txt_adsoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sol"
+                android:layout_marginTop="@dimen/üst2"
+                android:text="@string/isim"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/img_sohbetprofil"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_çevrimiçi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sol"
+                android:layout_marginTop="@dimen/üst1"
+                android:layout_marginBottom="@dimen/alt1"
+                android:text="@string/çevrimiçi"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_sohbetprofil"
+                app:layout_constraintTop_toBottomOf="@+id/txt_adsoyad" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color3">
+
+            <TextView
+
+                android:id="@+id/txt_mesaj"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/sol"
+                android:layout_marginTop="@dimen/üst1"
+                android:background="#BFB6B6"
+                android:text="@string/mesaj"
+                android:textColor="#000000"
+                app:circularflow_angles="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_gönder"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/üst1"
+                android:layout_marginEnd="@dimen/sağ"
+                android:backgroundTint="@color/color4"
+                app:cornerRadius="150dp"
+                app:icon="@drawable/next"
+                app:iconGravity="textEnd"
+                app:iconSize="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

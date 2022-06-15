@@ -7,7 +7,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
     <string name="giri_yap">Giriş Yap</string>
     <string name="parola">Parola</string>
     <string name="e_mail">E-mail</string>
@@ -20,11 +19,14 @@
     <string name="kadın">kadın</string>
     <string name="dtarihi">Doğum Tarihi</string>
     <string name="tel">Tel</string>
-   <string name="kayıt_ol">Kayıt Ol</string>
+    <string name="kayıt_ol">Kayıt Ol</string>
     <string name="sohbet">Sohbete Başla</string>
     <string name="rast">Rastgele</string>
     <string name="özel">Özelleştir</string>
     <string name="ark">Arkdaşlar</string>
+    <string name="çevrimiçi">Çevrimiçi</string>
+    <string name="isim">Ad Soyad</string>
+    <string name="mesaj">Mesaj Giriniz</string>
 
     <string name="todo">TODO</string>
     <string name="name">Name</string>

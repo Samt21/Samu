@@ -41,7 +41,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_rastgele"
         android:layout_width="158dp"
         android:layout_height="64dp"
         android:layout_marginStart="@dimen/sol3"
@@ -54,13 +54,13 @@
         app:iconGravity="textStart"
         app:iconSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_özelleştir"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_özelleştir"
         android:layout_width="158dp"
         android:layout_height="64dp"
         android:layout_marginTop="@dimen/alt"
