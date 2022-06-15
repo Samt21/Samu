@@ -27,6 +27,13 @@
     <string name="çevrimiçi">Çevrimiçi</string>
     <string name="isim">Ad Soyad</string>
     <string name="mesaj">Mesaj Giriniz</string>
+    <string name="KULLANICI">KULLANICI</string>
+    <string name="gmail">Kullanıcı@gmail.com</string>
+    <string name="Hesap_Ayarları">Hesap Ayarları</string>
+    <string name="Profil_Ayarları">Profil Ayarları</string>
+    <string name="Gizlilik_Ayarları">Gizlilik Ayarları</string>
+    <string name="Bildirim_Ayarları">Bildirim Ayarları</string>
+    <string name="kaydet">Kaydet</string>
 
     <string name="todo">TODO</string>
     <string name="name">Name</string>

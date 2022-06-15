@@ -4,152 +4,224 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color3"
-    tools:context=".ui.notifications.NotificationsFragment">
-
-    <EditText
-        android:id="@+id/editText_ad"
-        android:layout_width="132dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="@dimen/üst3"
-        android:layout_marginEnd="@dimen/sağ"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/ad"
-        android:textColor="#FAFAFA"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_tel"
-        android:layout_width="74dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="@dimen/sol"
-        android:text="@string/tel"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/edittext_telno"
-        app:layout_constraintStart_toEndOf="@+id/img_Profilfoto"
-        app:layout_constraintTop_toTopOf="@+id/edittext_telno" />
-
-    <TextView
-        android:id="@+id/txt_ad"
-        android:layout_width="58dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="@dimen/sol"
-        android:text="@string/ad"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/editText_ad"
-        app:layout_constraintStart_toEndOf="@+id/img_Profilfoto"
-        app:layout_constraintTop_toTopOf="@+id/editText_ad" />
-
-    <EditText
-        android:id="@+id/editTextDate_dtarih"
-        android:layout_width="132dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="@dimen/üst1"
-        android:layout_marginEnd="@dimen/sağ"
-        android:ems="10"
-        android:hint="@string/dtarihi"
-        android:inputType="date"
-        android:minHeight="48dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_ad" />
-
-    <CheckBox
-        android:id="@+id/check_erkek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/sağ1"
-        android:text="@string/erkek"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/check_kadin"
-        app:layout_constraintEnd_toStartOf="@+id/check_kadin"
-        app:layout_constraintTop_toTopOf="@+id/check_kadin"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_cinsiyet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sol6"
-        android:text="@string/cinsiyet"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/check_erkek"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/check_erkek" />
-
-    <EditText
-        android:id="@+id/edittext_telno"
-        android:layout_width="132dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="@dimen/üst"
-        android:layout_marginEnd="@dimen/sağ"
-        android:ems="10"
-        android:hint="@string/tel"
-        android:inputType="phone"
-        android:minHeight="48dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate_dtarih" />
+    android:background="#EAE9E9"
+    android:backgroundTint="#EAE9E9">
 
     <ImageView
-        android:id="@+id/img_Profilfoto"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="@dimen/sol1"
-        android:layout_marginTop="@dimen/üst3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user" />
-
-    <CheckBox
-        android:id="@+id/check_kadin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/üst1"
-        android:layout_marginEnd="@dimen/sağ"
-        android:text="@string/kadın"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_telno" />
-
-    <TextView
-        android:id="@+id/txt_Dtarih"
-        android:layout_width="66dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="@dimen/sol"
-        android:text="@string/dtarihi"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextDate_dtarih"
-        app:layout_constraintStart_toEndOf="@+id/img_Profilfoto"
-        app:layout_constraintTop_toTopOf="@+id/editTextDate_dtarih" />
-
-    <EditText
-        android:id="@+id/txt_aciklama"
-        android:layout_width="353dp"
-        android:layout_height="232dp"
-        android:layout_marginBottom="@dimen/alt2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:id="@+id/img_üstarkaplan"
+        android:layout_width="410dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="528dp"
+        android:backgroundTint="#EAE9E9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/top_background" />
+
+    <ImageView
+        android:id="@+id/img_ProfilFoto"
+        android:layout_width="150dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintStart_toStartOf="@+id/img_üstarkaplan"
+        app:layout_constraintTop_toTopOf="@+id/img_üstarkaplan"
+        app:srcCompat="@drawable/user" />
 
     <TextView
-        android:id="@+id/txt_hakkimizda"
-        android:layout_width="132dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="@dimen/sol2"
-        android:layout_marginBottom="@dimen/alt2"
-        android:text="@string/hakkımızda"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_aciklama"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:id="@+id/txt_Kullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/KULLANICI"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_ProfilFoto"
+        app:layout_constraintTop_toTopOf="@+id/img_ProfilFoto" />
+
+    <TextView
+        android:id="@+id/txt_Kullanicimail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/gmail"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Kullanici"
+        app:layout_constraintStart_toStartOf="@+id/txt_Kullanici"
+        app:layout_constraintTop_toTopOf="@+id/txt_Kullanici" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:backgroundTint="#EAE9E9"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Kullanicimail"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="298dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bacgraund_ff">
+
+
+            <ImageView
+                android:id="@+id/img_hesap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sol1"
+                android:layout_marginTop="@dimen/üst6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4"
+                app:srcCompat="@drawable/hesap" />
+
+            <TextView
+                android:id="@+id/txt_HesapAyarlari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Hesap_Ayarları"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.313"
+                app:layout_constraintStart_toEndOf="@+id/img_hesap"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bacgraund_ff">
+
+            <TextView
+                android:id="@+id/txt_ProfilAyari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Profil_Ayarları"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.574"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.678" />
+
+            <ImageView
+                android:id="@+id/img_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sol1"
+                android:layout_marginTop="@dimen/üst6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571"
+                app:srcCompat="@drawable/profil" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="299dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bacgraund_ff">
+
+            <ImageView
+                android:id="@+id/img_gizlilik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sol1"
+                android:layout_marginTop="@dimen/üst6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428"
+                app:srcCompat="@drawable/gizlilik" />
+
+            <TextView
+                android:id="@+id/txt_GizlilikAyarlari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Gizlilik_Ayarları"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.574"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.678" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bacgraund_ff">
+
+            <ImageView
+                android:id="@+id/img_bildirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sol1"
+                android:layout_marginTop="@dimen/üst6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571"
+                app:srcCompat="@drawable/bildirim" />
+
+            <TextView
+                android:id="@+id/txt_BildirimAyari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Bildirim_Ayarları"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.574"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.678" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_Kaydet"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bacgraund_buton"
+            android:backgroundTint="#3161FF"
+            android:text="@string/kaydet"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
